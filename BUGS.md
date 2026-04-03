@@ -20,18 +20,18 @@
 **Шаги воспроизведения:** 1. Отправить POST запрос на эндпоинт `/api/1/item`
                           2. В теле запроса передать корректный JSON, но с отрицательной ценой:
 
-                           ```json
-                            {
-                            "name": "Negative Price Item",
-                            "price": -100,
-                            "sellerId": 999999,
-                            "statistics": {
-                                "contacts": 1,
-                                "likes": 1,
-                                "viewCount": 1
-                                }
-                            }
- ```
+```json
+{
+"name": "Negative Price Item",
+"price": -100,
+"sellerId": 999999,
+"statistics": {
+    "contacts": 1,
+    "likes": 1,
+    "viewCount": 1
+    }
+}
+```
 **Серьезность:** Минорный
 **Окружение:** https://qa-internship.avito.com, macOS, Python 3.12              
 
@@ -44,17 +44,17 @@
 **Шаги воспроизведения:** 1. Отправить POST запрос на эндпоинт `/api/1/item`
                           2. В теле запроса передать корректный JSON, используя поле like внутри объекта статистики:
 
-                          ```json
-                            {
-                            "name": "Test Item",
-                            "price": 100,
-                            "sellerId": 123456,
-                            "statistics": {
-                                "contacts": 10,
-                                "like": 5,
-                                "viewCount": 100
-                                }
-                            }
+```json
+{
+"name": "Test Item",
+"price": 100,
+"sellerId": 123456,
+"statistics": {
+    "contacts": 10,
+    "like": 5,
+    "viewCount": 100
+    }
+}
 ```
 **Серьезность:** Мажорный
 **Окружение:** https://qa-internship.avito.com, macOS, Python 3.12
